@@ -10,7 +10,6 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate initial loading as per requirement 10.2
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1000);
@@ -29,7 +28,7 @@ export default function Home() {
   const totalFriends = friends.length;
   const onTrack = friends.filter(f => f.status === 'on-track').length;
   const needsAttention = friends.filter(f => f.status === 'overdue' || f.status === 'almost due').length;
-  const interactionsThisMonth = 12; // Static for summary as per design or dynamic if calculated
+  const interactionsThisMonth = 12;
 
   return (
     <div className="max-w-6xl mx-auto px-8 py-12">

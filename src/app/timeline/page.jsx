@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useState } from 'react';
-import { useAppData, InteractionType } from '@/context/AppDataContext';
+import { useAppData } from '@/context/AppDataContext';
 import Image from 'next/image';
 
 export default function Timeline() {
   const { timeline } = useAppData();
-  const [filter, setFilter] = useState<'All' | InteractionType>('All');
+  const [filter, setFilter] = useState('All');
 
   const filteredTimeline = filter === 'All' ? timeline : timeline.filter(t => t.type === filter);
 
@@ -20,7 +20,7 @@ export default function Timeline() {
           <select 
             className="appearance-none bg-white border border-gray-300 text-gray-700 py-2 pl-4 pr-10 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#194E38] focus:border-[#194E38]"
             value={filter}
-            onChange={(e) => setFilter(e.target.value as any)}
+            onChange={(e) => setFilter(e.target.value)}
           >
             <option value="All">All Interactions</option>
             <option value="Call">Calls only</option>
@@ -36,7 +36,7 @@ export default function Timeline() {
       <div className="bg-white rounded-xl shadow-sm border overflow-hidden">
         {filteredTimeline.length === 0 ? (
           <div className="p-12 text-center text-gray-500">
-            No interactions found. Go to a friend's details page to add a check-in!
+            No interactions found. Go to a friend&apos;s details page to add a check-in!
           </div>
         ) : (
           <div className="flex flex-col">

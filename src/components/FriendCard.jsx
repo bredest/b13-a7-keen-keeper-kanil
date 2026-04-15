@@ -1,13 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import { Friend } from '@/context/AppDataContext';
 import Image from 'next/image';
 
-interface FriendCardProps {
-  friend: Friend;
-}
-
-export default function FriendCard({ friend }: FriendCardProps) {
+export default function FriendCard({ friend }) {
   const statusColors = {
     'on-track': 'bg-emerald-500 text-white',
     'almost due': 'bg-amber-500 text-white',

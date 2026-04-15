@@ -4,10 +4,10 @@ import React, { useState, useEffect, use } from 'react';
 import { useAppData } from '@/context/AppDataContext';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { Clock, Archive, Trash2, Phone, MessageSquare, Video, Edit2 } from 'lucide-react';
+import { Clock, Archive, Trash2, Phone, MessageSquare, Video } from 'lucide-react';
 import toast from 'react-hot-toast';
 
-export default function FriendDetail({ params }: { params: Promise<{ id: string }> }) {
+export default function FriendDetail({ params }) {
   const resolvedParams = use(params);
   const { friends, addInteraction } = useAppData();
   const [loading, setLoading] = useState(true);
@@ -15,7 +15,6 @@ export default function FriendDetail({ params }: { params: Promise<{ id: string 
   const friend = friends.find(f => f.id === parseInt(resolvedParams.id, 10));
 
   useEffect(() => {
-    // Simulate slight loading to ensure context hydrates
     const timer = setTimeout(() => setLoading(false), 500);
     return () => clearTimeout(timer);
   }, []);
@@ -29,7 +28,7 @@ export default function FriendDetail({ params }: { params: Promise<{ id: string 
     'overdue': 'bg-red-500 text-white'
   };
 
-  const handleInteraction = (type: 'Call' | 'Text' | 'Video') => {
+  const handleInteraction = (type) => {
     addInteraction(friend.id, type);
     toast.success(`Logged a ${type} with ${friend.name}!`);
   };
@@ -66,7 +65,7 @@ export default function FriendDetail({ params }: { params: Promise<{ id: string 
             </div>
 
             <p className="text-slate-500 text-center italic text-sm font-medium mb-2">
-              "{friend.bio}"
+              &quot;{friend.bio}&quot;
             </p>
             <p className="text-slate-400 text-[13px] text-center">
               Preferred: email

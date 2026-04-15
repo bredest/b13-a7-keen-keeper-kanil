@@ -22,7 +22,7 @@ export default function Stats() {
     ].filter(d => d.value > 0);
   }, [timeline]);
 
-  const COLORS = ['#194E38', '#8b5cf6', '#10b981']; // Call, Text, Video
+  const COLORS = ['#194E38', '#8b5cf6', '#10b981'];
 
   return (
     <div className="max-w-4xl mx-auto px-8 py-12">
@@ -54,7 +54,7 @@ export default function Stats() {
                   ))}
                 </Pie>
                 <Tooltip 
-                  formatter={(value: any) => [`${value} logs`, 'Count']} 
+                  formatter={(value) => [`${value} logs`, 'Count']} 
                   contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'}} 
                 />
                 <Legend iconType="circle" wrapperStyle={{paddingTop: '20px'}} />
