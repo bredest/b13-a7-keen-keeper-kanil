@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Chen",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "sarah.chen@example.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["WORK"],
+    "bio": "Met in CS class. Loves grabbing boba and hiking on weekends.",
+    "goal": 14,
+    "next_due_date": "2026-04-01"
+  },
+  {
+    "id": 2,
+    "name": "Alex Johnson",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "alex.j@example.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["WORK", "MENTOR"],
+    "bio": "Former senior dev who taught me React. Always has great career advice.",
+    "goal": 30,
+    "next_due_date": "2026-05-15"
+  },
+  {
+    "id": 3,
+    "name": "Maya Patel",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "maya.p@example.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["FAMILY"],
+    "bio": "Known each other since 3rd grade. We try to do a video call every two weeks.",
+    "goal": 14,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 4,
+    "name": "David Kim",
+    "picture": "https://randomuser.me/api/portraits/men/46.jpg",
+    "email": "dkim@example.com",
+    "days_since_contact": 60,
+    "status": "overdue",
+    "tags": ["HOBBY"],
+    "bio": "My duo partner in practically every co-op game we play.",
+    "goal": 30,
+    "next_due_date": "2026-03-15"
+  },
+  {
+    "id": 5,
+    "name": "Emma Wilson",
+    "picture": "https://randomuser.me/api/portraits/women/17.jpg",
+    "email": "emma.wilson@example.com",
+    "days_since_contact": 25,
+    "status": "almost due",
+    "tags": ["HOBBY"],
+    "bio": "Met at the local library book club. Always has the best sci-fi recommendations.",
+    "goal": 30,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 6,
+    "name": "James Wright",
+    "picture": "https://randomuser.me/api/portraits/men/22.jpg",
+    "email": "jwright@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["TRAVEL"],
+    "bio": "My gym accountability partner. We usually text before our sets.",
+    "goal": 7,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 7,
+    "name": "Olivia Martinez",
+    "picture": "https://randomuser.me/api/portraits/women/33.jpg",
+    "email": "olivia.m@example.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["WORK"],
+    "bio": "Survived organic chemistry together. She moved to Chicago last year.",
+    "goal": 30,
+    "next_due_date": "2026-03-31"
+  },
+  {
+    "id": 8,
+    "name": "Lisa Nakamura",
+    "picture": "https://randomuser.me/api/portraits/women/65.jpg",
+    "email": "lisa.n@example.com",
+    "days_since_contact": 15,
+    "status": "almost due",
+    "tags": ["WORK", "HOBBY"],
+    "bio": "We share a love for water colors. Try to meet up for painting sessions.",
+    "goal": 21,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 9,
+    "name": "Ryan O'Brien",
+    "picture": "https://randomuser.me/api/portraits/men/67.jpg",
+    "email": "ryan.obrien@example.com",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["WORK"],
+    "bio": "We usually get Thai food on Tuesdays. Keeps me sane during heavy sprint weeks.",
+    "goal": 7,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 10,
+    "name": "Chloe Smith",
+    "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "email": "chloe.smith@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["FAMILY"],
+    "bio": "My favorite cousin. Always sending each other funny TikToks.",
+    "goal": 14,
+    "next_due_date": "2026-04-11"
+  }
+]
